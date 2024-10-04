@@ -81,7 +81,7 @@ jobs:
       - name: Build and generate static site in /out
         run: pnpm run build
         #- name: Build with Next.js i have already have a template so don't
-		#need to have this build with boilerplate
+        #need to have this build with boilerplate
         #run: ${{ steps.detect-package-manager.outputs.runner }} next build
         # run: npx --no-install next build
 
