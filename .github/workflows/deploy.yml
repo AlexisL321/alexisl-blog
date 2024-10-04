@@ -55,7 +55,7 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "${{ steps.detect-package-manager.outputs.manager }}"
-          cache-dependency-path: "${{ github.workspace }}/package.json"
+          cache-dependency-path: "${{ github.workspace }}/pnpm-lock.yaml"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -73,8 +73,10 @@ jobs:
 
       - name: Install dependencies
         #run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-        run: npm ci
+        run: pnpm install
 
+      - name: Build and generate static site in /out
+        run: pnpm run build
 
       #- name: Build with Next.js
         #run: ${{ steps.detect-package-manager.outputs.runner }} next build
