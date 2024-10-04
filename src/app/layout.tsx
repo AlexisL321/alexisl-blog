@@ -1,9 +1,9 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import Footer from "@/app/_components/footer.tsx";
+import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants.ts";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
+import { ThemeSwitcher } from "./_components/theme-switcher.tsx";
 
 import "./globals.css";
 
