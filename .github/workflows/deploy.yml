@@ -55,7 +55,7 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "${{ steps.detect-package-manager.outputs.manager }}"
-		  cache-dependency-path: "${{ github.workspace }}/package.json"
+          cache-dependency-path: "${{ github.workspace }}/package.json"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
