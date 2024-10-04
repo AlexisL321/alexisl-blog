@@ -77,17 +77,9 @@ jobs:
 
       - name: Build and generate static site in /out
         run: pnpm run build
-
-      #- name: Build with Next.js
+        #- name: Build with Next.js
         #run: ${{ steps.detect-package-manager.outputs.runner }} next build
-       # run: npx --no-install next build
-
-	  #- name: Print package manager
-	#	run: echo "Package manager: ${{ steps.detect-package-manager.outputs.manager }}"
-
-	 # - name: Print install command
-	#	run: echo "Install command: ${{ steps.detect-package-manager.outputs.command }}"
-
+        # run: npx --no-install next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
