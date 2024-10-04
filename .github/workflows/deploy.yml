@@ -76,9 +76,9 @@ jobs:
         run: npm ci
 
 
-      - name: Build with Next.js
+      #- name: Build with Next.js
         #run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        run: npx --no-install next build
+       # run: npx --no-install next build
 
 	  #- name: Print package manager
 	#	run: echo "Package manager: ${{ steps.detect-package-manager.outputs.manager }}"
