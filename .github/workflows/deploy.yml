@@ -53,7 +53,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-		  cache-dependency-path: ${{github.workspace}}/package.json
+		  cache-dependency-path: "${{github.workspace}}/package.json"
           node-version: "lts/*"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
